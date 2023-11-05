@@ -5,21 +5,17 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import { getValue } from "@testing-library/user-event/dist/utils";
-import MenuIcon from '@material-ui/icons/Menu';
-
-
+import SideDrawer from "./SideDrawer";
 
 
 const Header = () => {
   const [drawerOpen,setDrawerOpen] = useState(false)
 
-  const toggleDrawer = (getValue) =>{
-    setDrawerOpen(getValue)
+  const toggleDrawer = (value) =>{
+    setDrawerOpen(value)
 
   }
     
-  
   return (
     <AppBar position ="fixed"
     styles = {{
@@ -27,7 +23,8 @@ const Header = () => {
       boxShadow:'none',
       padding:'10px 0px'
 
-    }}>
+    }}
+    >
         <Toolbar>
           <div className="header_logo">
             <div className="font_righteous header_logo">
@@ -37,15 +34,20 @@ const Header = () => {
               MUSICAL EVENTS
             </div>
           </div>
-          <IconButton
+          <IconButton  
           aria-label="Menu"
           color="inherit"
-          onClick={() => toggleDrawer(true)}>
-            <MenuIcon/>
-
+          onClick = {(value) => toggleDrawer(true)}
+          >
+          
+            </MenuIcon>
           </IconButton>
-        </Toolbar>
+            <SideDrawer
+            open={drawerOpen}
+            onClose={(value) => toggleDrawer(value)}
+            />
+          </Toolbar>
     </AppBar> 
   )
-}
-export default Header;
+  }
+  export default Header;

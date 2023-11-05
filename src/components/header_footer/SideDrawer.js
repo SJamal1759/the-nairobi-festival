@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
+import MenuIcon from '@mui/material/icons/Menu';
 
 const SideDrawer = (props) => {
   return(
@@ -24,3 +25,4 @@ const SideDrawer = (props) => {
     </Drawer>
   )
 }
+export default SideDrawer;
