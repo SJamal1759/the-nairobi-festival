@@ -1,6 +1,5 @@
 import React from 'react';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import Slider from '@mui/material/Slider';
 
 import slide_one from '../../resources/images/slide_one.jpg';
