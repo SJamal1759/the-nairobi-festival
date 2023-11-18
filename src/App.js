@@ -3,7 +3,7 @@ import './resources/styles.css'
 import Header from './components/header_footer/Header';
 import { Height } from '@mui/icons-material';
 import Featured from './components/featured';
-import Carousel from './components/featured/carousel';
+import Carrousel from './components/featured/Carrousel';
 
 class App extends Component {
   render() {
@@ -11,7 +11,6 @@ class App extends Component {
       <div className='App' style={{height:'1500px',background:'cornflowerblue'}}>
         <Header/>
         <Featured/>
-        <Carousel/>
       </div>
     )
   }

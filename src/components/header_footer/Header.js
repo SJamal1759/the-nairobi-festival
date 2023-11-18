@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { AppBar, IconButton } from '@mui/material';
 import Toolbar from '@mui/material/Toolbar';
-import MenuItem from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import Icon from '@mui/material';
 import SideDrawer from './SideDrawer';
 
 

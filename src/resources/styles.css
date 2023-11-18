@@ -85,8 +85,10 @@ footer .footer_copyright {
 
 
 .carrousel_wrapper {
-    height:700px;
-    overflow: hidden;
+    height:100%;
+    width: 100%;
+    display: block;
+    
 }
 
 .carrousel_image {
