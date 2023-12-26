@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import './resources/styles.css'
+import React, { Component } from 'react';
+import './resources/styles.css';
+import './components/featured/carrousel.css'
 import Header from './components/header_footer/Header';
 // import { Height } from '@mui/icons-material';
 import Featured from './components/featured';
