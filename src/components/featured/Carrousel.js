@@ -1,38 +1,61 @@
-import React, { useState} from 'react';
-import './carrousel.css';
-import { imagesss } from '../featured/Helper/CarrouselData';
-import { ArrowBackIos } from '@mui/icons-material';
-import { ArrowForwardIos } from '@mui/icons-material';
+import React from 'react';
+import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import slide_one from '../../resources/images/slide_one.jpg';
+import slide_two from '../../resources/images/slide_two.jpg';
+import slide_three from '../../resources/images/slide_three.jpg';
+
+
 const Carrousel = () => {
-  const [currImg,setCurrImg] = useState(0);
+
+    const settings = {
+        dots:false,
+        infinite:true,
+        autoplay:true,
+        speed:500
+    }
 
     return(
-        <div className='carousel'>
-      <div className='carousel-inner' 
-      style={{backgroundImage:`url(${imagesss[currImg].img})`}}>
+        <div
+            className="carrousel_wrapper"
+            style={{
+                height:`${window.innerHeight}px`
+            }}
+        >
+            <Slider {...settings}>
+                <div>
+                    <div
+                        className="carrousel_image"
+                        style={{
+                            background:`url(${slide_one})`,
+                            height:`${window.innerHeight}px`
+                        }}
+                    ></div>
+                </div>
+                <div>
+                    <div
+                        className="carrousel_image"
+                        style={{
+                            background:`url(${slide_two})`,
+                            height:`${window.innerHeight}px`
+                        }}
+                    ></div>
+                </div>
+                <div>
+                    <div
+                        className="carrousel_image"
+                        style={{
+                            background:`url(${slide_three})`,
+                            height:`${window.innerHeight}px`
+                        }}
+                    ></div>
+                </div>
+            </Slider>
 
-      <div className='left'
-      onClick={() => {
-        currImg > 0 && setCurrImg(currImg -1);
-      }}>
-        <ArrowBackIos style={{fontSize:30}}/>
-      </div>
-      <div className='center'></div>
-      <div className='right'
-      onClick={() => {
-        currImg <imagesss.length -1 &&setCurrImg(currImg +1);
-      }}>
-        <ArrowForwardIos style={{fontSize:30}}/>
-      </div>
-        
-      </div>
-
-
-    </div>
+        </div>
     )
 
 }

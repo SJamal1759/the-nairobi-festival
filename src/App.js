@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 import './resources/styles.css';
-import './components/featured/carrousel.css'
+
 import Header from './components/header_footer/Header';
+import Footer from './components/header_footer/Footer';
 // import { Height } from '@mui/icons-material';
 import Featured from './components/featured';
-import Carrousel from './components/featured/Carrousel'
+
 
 class App extends Component {
   render() {
     return (
-      <div className='App' style={{height:'1500px'}}>
+      <div className='App'>
         <Header/>
         <Featured/>
-        <Carrousel/>
+        <div style={{backgroundColor:'red',height:'800px'}}></div>
+        <div style={{backgroundColor:'blue',height:'800px'}}></div>
+        <div style={{backgroundColor:'green',height:'800px'}}></div>
+        <div style={{backgroundColor:'yellow',height:'800px'}}></div>
+        <Footer/>
+        
       </div>
     )
   }

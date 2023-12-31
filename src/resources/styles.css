@@ -84,7 +84,7 @@ footer .footer_copyright {
 ======================*/
 
 
-/* .carrousel_wrapper {
+.carrousel_wrapper {
     width: 100%;
     height: 600px;
 }
@@ -93,7 +93,7 @@ footer .footer_copyright {
     background-repeat: no-repeat;
     background-size: cover !important;
     display: flex;
-} */
+}
 
 .artist_name {
     position: absolute;
