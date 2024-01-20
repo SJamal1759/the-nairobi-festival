@@ -14,7 +14,7 @@ const TimeUntil = () => {
       <div className="countdown-tag">{value}</div>
     </div>
   );
-  const getTimeUntil = (deadline) => {
+  const getTimeUntil = useCallback((deadline) => {
     const time = Date.parse(deadline) - Date.parse(new Date());
     if (time < 0) {
       console.log("Date Passed");
@@ -30,10 +30,10 @@ const TimeUntil = () => {
         seconds,
       });
     }
-  };
+  }, []);
 
   useEffect(() => {
-    setInterval(() => getTimeUntil("Nov, 20, 2024 01:20:00"), 1000);
+    setInterval(() => getTimeUntil("Dec, 23, 2024 02:43:00"), 1000);
   }, [getTimeUntil]);
   return (
     <Slide left delay={1000}>
