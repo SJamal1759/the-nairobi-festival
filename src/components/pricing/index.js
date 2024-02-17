@@ -4,7 +4,7 @@ import { Zoom } from "react-awesome-reveal";
 
 const Pricing = () => {
   const priceState = {
-    prices: [100, 150, 200],
+    prices: [100, 250, 500],
     position: ["Balcony", "Medium", "Star"],
     desc: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt uts",
@@ -24,7 +24,7 @@ const Pricing = () => {
       >
         <div className="pricing_inner_wrapper">
           <div className="pricing_title">
-            <span>${priceState.prices[index]}</span>
+            <span>Ksh{priceState.prices[index]}</span>
             <span>{priceState.position[index]}</span>
           </div>
           <div className="pricing_description">{priceState.desc[index]}</div>

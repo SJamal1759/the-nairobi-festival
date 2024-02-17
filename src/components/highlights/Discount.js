@@ -38,7 +38,7 @@ const Discount = () => {
 
         <Slide right>
           <div className="discount_description">
-            <h3>Purchase ticket before 20th June</h3>
+            <h3>Purchase ticket before 10th December</h3>
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
