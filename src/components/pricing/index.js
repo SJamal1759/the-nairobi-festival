@@ -11,7 +11,7 @@ const Pricing = () => {
       "Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     ],
-    linkto: ["http://sales.b", "http://sales/m", "http://sales.s"],
+    linkto: ["http://sales/kids", "http://sales/adults", "http://sales.s"],
     delay: [500, 0, 500],
   };
 

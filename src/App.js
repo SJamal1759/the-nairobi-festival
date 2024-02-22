@@ -8,6 +8,7 @@ import Featured from "./components/featured";
 import VenueInfo from "./components/venueInfo";
 import Highlights from "./components/highlights/index";
 import Pricing from "./components/pricing";
+import Location from "./components/location";
 
 class App extends Component {
   render() {
@@ -18,11 +19,7 @@ class App extends Component {
         <VenueInfo />
         <Highlights />
         <Pricing />
-        <div style={{ backgroundColor: "red", height: "800px" }}></div>
-        <div style={{ backgroundColor: "blue", height: "800px" }}></div>
-        <div style={{ backgroundColor: "green", height: "800px" }}></div>
-        <div style={{ backgroundColor: "yellow", height: "800px" }}></div>
-
+        <Location />
         <Footer />
       </div>
     );

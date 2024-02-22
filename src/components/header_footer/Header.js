@@ -39,7 +39,7 @@ class Header extends Component {
             <div className="font_righteous header_logo_venue">
               the Nairobi Festival
             </div>
-            <div className="header_logo_title">An Arts Events</div>
+            <div className="header_logo_title">Vibe of the City</div>
           </div>
           <IconButton
             aria-label="Menu"
