@@ -4,8 +4,8 @@ import { Zoom } from "react-awesome-reveal";
 
 const Pricing = () => {
   const priceState = {
-    prices: [100, 250, 500],
-    position: ["Balcony", "Medium", "Star"],
+    prices: [50, 100, 500],
+    position: ["Kids", "Adults", "Balcony"],
     desc: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt uts",
       "Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea",
