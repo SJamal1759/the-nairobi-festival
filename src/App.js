@@ -6,7 +6,7 @@ import Header from "./components/header_footer/Header";
 import Footer from "./components/header_footer/Footer";
 // import { Height } from '@mui/icons-material';
 import Featured from "./components/featured";
-import VenueInfo from "./components/venueInfo";
+import VenueInfo from "./components/venueinfo";
 import Highlights from "./components/highlights/index";
 import Pricing from "./components/pricing";
 import Location from "./components/location";
@@ -20,7 +20,7 @@ const App = () => {
         <Featured />
       </Element>
 
-      <Element name="venueInfo">
+      <Element name="venueinfo">
         <VenueInfo />
       </Element>
 
