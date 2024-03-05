@@ -1,43 +1,45 @@
-import React from 'react';
-import { Drawer } from '@mui/material';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
+import React from "react";
+import { Drawer } from "@mui/material";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import { scroller } from "react-scroll";
 
 const SideDrawer = (props) => {
+  const links = [
+    { where: "featured", value: "To top" },
+    { where: "venuenfo", value: "Venue NFO" },
+    { where: "highlights", value: "Highlights" },
+    { where: "pricing", value: "Pricing" },
+    { where: "location", value: "Location" },
+  ];
+
+  const scrollToElement = (element) => {
+    scroller.scrollTo(element, {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+      offset: -150,
+    });
+    props.onClose(false);
+  };
+
+  const renderItem = (item) => (
+    <ListItem
+      button
+      onClick={() => scrollToElement(item.where)}
+      key={item.where}
+    >
+      {item.value}
+    </ListItem>
+  );
+
   return (
     <Drawer
-      anchor='right'
+      anchor={"right"}
       open={props.open}
-      onClose={()=>props.onClose(false)}
-    
+      onClose={() => props.onClose(false)}
     >
-      <List component='nav'>
-        <ListItem button onClick ={ ()=> console.log("featured")}
-        >
-        Events Starts In
-
-        </ListItem>
-        <ListItem button onClick ={ ()=> console.log("Venue INFO")}
-        >
-        Venue INFO
-
-        </ListItem>
-        <ListItem button onClick ={ ()=> console.log("Highlights")}
-        >
-        Highlights
-
-        </ListItem>
-        <ListItem button onClick ={ ()=> console.log("Pricing")}
-        >
-        Pricing
-
-        </ListItem>
-        <ListItem button onClick ={ ()=> console.log("Location")}
-        >
-        Location
-
-        </ListItem>
-      </List>
+      <List component="nav">{links.map((item) => renderItem(item))}</List>
     </Drawer>
   );
 };

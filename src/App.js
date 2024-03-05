@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import React, { Component } from "react";
 import "./resources/styles.css";
 
