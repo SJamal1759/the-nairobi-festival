@@ -11,19 +11,34 @@ import Highlights from "./components/highlights/index";
 import Pricing from "./components/pricing";
 import Location from "./components/location";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header />
+const App = () => {
+  return (
+    <div className="App">
+      <Header />
+
+      <Element name="featured">
         <Featured />
+      </Element>
+
+      <Element name="venueInfo">
         <VenueInfo />
+      </Element>
+
+      <Element name="highlights">
         <Highlights />
+      </Element>
+
+      <Element name="pricing">
         <Pricing />
+      </Element>
+
+      <Element name="location">
         <Location />
-        <Footer />
-      </div>
-    );
-  }
-}
+      </Element>
+
+      <Footer />
+    </div>
+  );
+};
+
 export default App;

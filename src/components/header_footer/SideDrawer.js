@@ -7,7 +7,7 @@ import { scroller } from "react-scroll";
 const SideDrawer = (props) => {
   const links = [
     { where: "featured", value: "To top" },
-    { where: "venuenfo", value: "Venue NFO" },
+    { where: "venuenfo", value: "VenueNfo" },
     { where: "highlights", value: "Highlights" },
     { where: "pricing", value: "Pricing" },
     { where: "location", value: "Location" },
